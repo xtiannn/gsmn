@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.note-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.new-note-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.note-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.note {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-body {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.note-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-view-button, .note-edit-button, .note-delete-button {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.note-view-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.note-edit-button {
+    background-color: #f39c12;
+    color: white;
+}
+
+.note-delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
